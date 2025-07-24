@@ -206,10 +206,6 @@ Arduino Nano 或 Uno
 Arduino IDE 编程环境
 
 ###⚙️ 运行步骤
-bash
-复制
-编辑
-git clone https://github.com/Fermanov114/Infrared-LED-Harp.git
 在 Arduino IDE 中打开 .ino 文件
 
 上传程序至 Arduino
