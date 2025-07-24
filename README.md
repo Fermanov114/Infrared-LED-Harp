@@ -71,7 +71,7 @@ Set CHORD_MODE = 0 for arpeggio mode (notes played one by one)
 
 Set DEBUG_MODE = 1 to print sensor values to Serial Monitor
 
-📐 Circuit Overview
+## 📐 Circuit Overview
 Transmitter Side:
 8 Infrared LEDs connected in parallel
 
@@ -95,14 +95,14 @@ Speaker connected to D12
 
 Note generation uses tone() function from Arduino standard libraries
 
-📁 File Structure
+## 📁 File Structure
 File/Folder	Description
 main.ino	Main Arduino program file
 pitches.h	Definitions for musical note frequencies
 report/	Full project report in PDF format
 schematics/	Circuit diagrams and design references
 
-🔬 Experimental Results
+## 🔬 Experimental Results
 Functionality: The IR harp successfully detects blocked beams and produces corresponding notes
 
 Modes: Both chord simulation and arpeggio work as expected
@@ -111,7 +111,7 @@ Stability: Minor interference observed due to scattered IR light
 
 Safety: Compared to laser harps, IR-based design is safe and eye-friendly
 
-⚠️ Known Limitations
+## ⚠️ Known Limitations
 IR LEDs are invisible, alignment can be challenging during assembly
 
 The speaker can only play one tone at a time, so chords are simulated
@@ -120,7 +120,7 @@ Interference between IR beams may reduce sensitivity; shielding is recommended
 
 Current code is designed for 8 notes only (C4–C5)
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 Add MIDI output for professional audio integration
 
 Replace the speaker with a digital synthesizer module
@@ -129,16 +129,16 @@ Implement adjustable pitch or octave switching
 
 Improve signal isolation using IR filters or housing
 
-👥 Contributors
+## 👥 Contributors
 This project was developed as part of a Year 2 electrical engineering course at the University of Liverpool.
 
 Supervisor: Dr. Naser Sedghi
 
-📄 License
+## 📄 License
 This project is released for educational and non-commercial purposes.
 Feel free to fork and adapt. Please credit the authors when appropriate.
 
-🙏 Acknowledgements
+## 🙏 Acknowledgements
 University of Liverpool — Department of Electrical Engineering and Electronics
 
 Dr. Naser Sedghi — for project supervision
@@ -150,10 +150,10 @@ Arduino community — for open-source libraries and documentation
 
 
 
-红外电子竖琴 🎵
+## 红外电子竖琴 🎵
 这是一个基于 Arduino 的交互式电子乐器，使用红外发光二极管与光电二极管模拟竖琴琴弦。当手指挡住红外光束（如拨动琴弦）时，系统播放对应的音符。
 
-🔧 项目特色
+## 🔧 项目特色
 使用不可见红外线替代激光，更安全
 
 实现 C4 至 C5 八音音阶
@@ -164,7 +164,7 @@ LED 灯实时反馈
 
 基于 Arduino Nano 完整实现
 
-🖼️ 工作原理
+## 🖼️ 工作原理
 每根“琴弦”由以下组件组成：
 
 一枚红外 LED（发射端）
@@ -181,13 +181,13 @@ Arduino 播放对应音符
 
 提示灯熄灭，提供视觉反馈
 
-🎼 模式说明
+## 🎼 模式说明
 CHORD_MODE = 1：模拟和弦（快速轮流播放多音）
 
 CHORD_MODE = 0：琶音演奏（按顺序播放）
 
-💻 运行方法
-📦 所需组件
+## 💻 运行方法
+###  📦 所需组件
 Arduino Nano 或 Uno
 
 红外 LED ×8
@@ -204,7 +204,7 @@ Arduino Nano 或 Uno
 
 Arduino IDE 编程环境
 
-⚙️ 运行步骤
+###⚙️ 运行步骤
 bash
 复制
 编辑
@@ -219,14 +219,14 @@ git clone https://github.com/Fermanov114/Infrared-LED-Harp.git
 
 用手“拨动”红外琴弦开始演奏！
 
-📐 电路说明
+## 📐 电路说明
 发射端：8 个红外 LED 并联 + 30Ω 串联电阻
 
 接收端：8 组接收模块（光电二极管 + LED + 10kΩ 电阻）连接至 D2–D9
 
 扬声器：连接至 Arduino 的 D12 引脚
 
-📁 项目结构
+##  📁 项目结构
 文件 / 文件夹	内容说明
 main.ino	主控制程序
 pitches.h	音符频率定义
