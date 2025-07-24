@@ -51,7 +51,7 @@ When a finger blocks the beam:
 
 ### ⚙️ Setup Instructions
 
-```bash
+
 git clone https://github.com/Fermanov114/Infrared-LED-Harp.git
 
 Open the .ino file (e.g. main.ino) in Arduino IDE
